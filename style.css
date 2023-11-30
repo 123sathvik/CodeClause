@@ -1,0 +1,105 @@
+.bg_disp{
+    background: linear-gradient(115deg, #001B79, #317cbe);
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+.to-dolist{
+    width: 100%;
+    max-width: 500px;
+    background: #ffff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 2px;
+    
+}
+.to-dolist h2{
+    color: rgb(2, 2, 87);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.to-dolist h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    border-radius: 3px;
+}
+.row:hover{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(145, 213, 255);
+    margin-bottom: 20px;
+    padding-left: 40px;
+    border-radius: 3px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+
+}
+button{
+    border: none;
+    outline: none;
+    color: black;
+    background-color:#3b5bd2;
+    padding: 16px 20px;
+    border-radius: 3px;
+    width: 80px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-image: url(unchecked.png);
+    background-position: center;
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #000;
+    text-decoration: line-through;
+     
+}
+ul li.checked::before{
+    background-image:  url(checkbox.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 7px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color: #000;
+    line-height: 40px ;
+    text-align: center;
+}
+ul li span:hover{
+    background-color: rgb(145, 213, 255); 
+
+}
